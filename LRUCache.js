@@ -2,8 +2,7 @@
  * @param {number} capacity
  */
  var LRUCache = function(capacity) {
-  this.array = [];
-  this.count = new Array(capacity);
+
 };
 
 /**
@@ -11,9 +10,7 @@
 * @return {number}
 */
 LRUCache.prototype.get = function(key) {
-  let mostRecent = this.array[key];
-  this.count.push()
-  return mostRecent;
+
 };
 
 /**
@@ -22,14 +19,7 @@ LRUCache.prototype.get = function(key) {
 * @return {void}
 */
 LRUCache.prototype.put = function(key, value) {
-  if (!this.array[key]) {
-      if (this.count.length >= this.array.length) {
-          let leastRecent = this.count.shift();
-          delete this.array[leastRecent];
-      }
-  }
-  this.array[key] = value;
-  this.count.push(key);
+
 };
 
 /**
